@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fadi Mohamed Ibrahim Albeli — Data Analyst portfolio, Excel, Power BI and SQL.">
+<title>Fadi Albeli | Data Analyst Portfolio</title>
+<style>
+:root{--blue:#1769e0;--navy:#102a56;--ink:#17243b;--muted:#64748b;--pale:#eef5ff;--line:#e4ebf5;--white:#fff}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#fff;color:var(--ink);line-height:1.65}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:800;color:var(--navy);font-size:1.1rem;letter-spacing:-.4px}.logo span{color:var(--blue)}
+nav{display:flex;align-items:center;gap:24px;font-size:.91rem;color:#42516a}
+nav a:hover{color:var(--blue)}.nav-actions{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--blue);background:var(--blue);color:#fff;padding:11px 18px;border-radius:10px;font-weight:700;font-size:.92rem;cursor:pointer}
+.btn.secondary{background:#fff;color:var(--blue)}.lang{border:1px solid var(--line);background:#fff;padding:9px 12px;border-radius:9px;cursor:pointer;color:var(--navy);font-weight:700}
+.hero{padding:94px 0 82px;background:radial-gradient(circle at 85% 18%,#e7f1ff 0,transparent 30%),linear-gradient(180deg,#fbfdff,#fff)}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--pale);color:var(--blue);padding:7px 12px;border-radius:30px;font-size:.84rem;font-weight:700}
+.dot{width:8px;height:8px;background:#20b47b;border-radius:50%}
+h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.08;letter-spacing:-2px;color:var(--navy);margin:22px 0}
+h1 span{color:var(--blue)}.lead{font-size:1.12rem;color:var(--muted);max-width:650px;margin-bottom:28px}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}.hero-card{background:#fff;border:1px solid var(--line);box-shadow:0 20px 60px rgba(24,69,130,.09);border-radius:22px;padding:25px}
+.avatar{width:76px;height:76px;border-radius:20px;background:linear-gradient(135deg,#dceaff,#f1f7ff);display:grid;place-items:center;color:var(--blue);font-size:1.65rem;font-weight:800;margin-bottom:18px}
+.hero-card h3{margin:0;color:var(--navy)}.hero-card p{margin:5px 0 18px;color:var(--muted);font-size:.92rem}
+.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{padding:13px;background:#f7faff;border-radius:12px}.stat strong{display:block;color:var(--blue);font-size:1.1rem}.stat small{color:var(--muted)}
+section{padding:76px 0}.section-head{max-width:680px;margin-bottom:32px}.kicker{color:var(--blue);font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px}
+h2{font-size:clamp(1.8rem,3vw,2.55rem);line-height:1.2;color:var(--navy);margin:8px 0 12px;letter-spacing:-.8px}
+.section-head p,.about-copy{color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:start}
+.info-panel{background:#f7faff;border:1px solid var(--line);padding:25px;border-radius:18px}
+.info-panel h3{margin-top:0;color:var(--navy)}.info-list{display:grid;gap:12px}.info-item{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);padding-bottom:10px}.info-item:last-child{border:0;padding:0}.info-item span:first-child{color:var(--muted)}
+.skills{background:#f8fbff}.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.skill{background:#fff;border:1px solid var(--line);border-radius:15px;padding:20px}.skill .icon{width:42px;height:42px;border-radius:12px;background:var(--pale);display:grid;place-items:center;color:var(--blue);font-weight:800;margin-bottom:14px}.skill h3{font-size:1rem;margin:0 0 5px;color:var(--navy)}.skill p{font-size:.88rem;color:var(--muted);margin:0}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#fff}.project-visual{height:150px;background:linear-gradient(135deg,#eaf3ff,#d7e8ff);display:grid;place-items:center;color:var(--blue);font-size:2rem;font-weight:800}.project-body{padding:20px}.project-body h3{margin:0 0 8px;color:var(--navy)}.project-body p{margin:0 0 14px;color:var(--muted);font-size:.91rem}.tag{display:inline-block;background:#f0f5fc;color:#466080;padding:5px 9px;border-radius:20px;font-size:.76rem;margin:3px 3px 0 0}
+.timeline{border-left:2px solid #dce9fb;margin-left:8px;padding-left:25px;display:grid;gap:25px}.job{position:relative}.job:before{content:"";position:absolute;width:12px;height:12px;background:var(--blue);border:4px solid #eaf2ff;border-radius:50%;left:-34px;top:5px}.job h3{margin:0;color:var(--navy)}.job .meta{color:var(--blue);font-size:.88rem;font-weight:700}.job p{margin:7px 0 0;color:var(--muted)}
+.contact{background:var(--navy);color:#fff}.contact h2{color:#fff}.contact .section-head p{color:#c5d3e8}.contact-card{display:flex;justify-content:space-between;align-items:center;gap:20px;background:#183968;padding:25px;border:1px solid #31517d;border-radius:17px}.contact-card p{margin:4px 0;color:#d0dced}.contact-card a{color:#fff;font-weight:700}
+footer{padding:25px 0;color:var(--muted);font-size:.85rem}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.mobile-menu{display:none}
+html[dir="rtl"] body{font-family:Tahoma,Arial,sans-serif}html[dir="rtl"] .timeline{border-left:0;border-right:2px solid #dce9fb;margin-left:0;margin-right:8px;padding-left:0;padding-right:25px}html[dir="rtl"] .job:before{left:auto;right:-34px}
+@media(max-width:850px){nav{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:65px 0}.hero-card{max-width:460px}.skill-grid{grid-template-columns:repeat(2,1fr)}.project-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.skill-grid,.project-grid{grid-template-columns:1fr}.nav{height:66px}.nav .btn{display:none}section{padding:58px 0}.contact-card{align-items:flex-start;flex-direction:column}h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+  <a class="logo" href="#home">FADI<span>.</span></a>
+  <nav>
+    <a href="#about" data-en="About" data-ar="نبذة عني">About</a><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a>
+    <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a><a href="#experience" data-en="Experience" data-ar="الخبرة">Experience</a>
+    <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+  </nav>
+  <div class="nav-actions"><button class="lang" id="langBtn" type="button">العربية</button><a class="btn" href="#contact" data-en="Let's talk" data-ar="تواصل معي">Let's talk</a></div>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+  <div>
+    <div class="eyebrow"><span class="dot"></span><span data-en="IT Professional · Data Analytics" data-ar="متخصص تقنية معلومات · تحليل بيانات">IT Professional · Data Analytics</span></div>
+    <h1><span data-en="Turning data" data-ar="أحوّل البيانات">Turning data</span><br><span data-en="into decisions." data-ar="إلى قرارات.">into decisions.</span></h1>
+    <p class="lead" data-en="I'm Fadi Mohamed Ibrahim Albeli, an IT professional focused on data analysis and visualization. I use Excel, Power BI and database skills to turn information into clear, useful insights." data-ar="أنا فادي محمد إبراهيم البلّي، متخصص في تقنية المعلومات أركز على تحليل البيانات وتصويرها بصرياً. أستخدم Excel وPower BI ومهارات قواعد البيانات لتحويل المعلومات إلى رؤى واضحة وقابلة للاستخدام.">I'm Fadi Mohamed Ibrahim Albeli, an IT professional focused on data analysis and visualization. I use Excel, Power BI and database skills to turn information into clear, useful insights.</p>
+    <div class="hero-buttons"><a class="btn" href="#projects" data-en="Explore my work" data-ar="استكشف أعمالي">Explore my work</a><a class="btn secondary" href="#contact" data-en="Contact me" data-ar="تواصل معي">Contact me</a></div>
+  </div>
+  <aside class="hero-card">
+    <div class="avatar">FA</div><h3>Fadi Mohamed Ibrahim Albeli</h3>
+    <p data-en="Data Analytics | Excel · Power BI · SQL" data-ar="تحليل البيانات | Excel · Power BI · SQL">Data Analytics | Excel · Power BI · SQL</p>
+    <div class="stat-row">
+      <div class="stat"><strong>2018–2026</strong><small data-en="IT experience" data-ar="خبرة في تقنية المعلومات">IT experience</small></div>
+      <div class="stat"><strong>3+</strong><small data-en="Core analytics tools" data-ar="أدوات تحليل أساسية">Core analytics tools</small></div>
+    </div>
+  </aside>
+</div></section>
+<section id="about"><div class="container">
+  <div class="section-head"><div class="kicker" data-en="About me" data-ar="نبذة عني">About me</div><h2 data-en="A practical mix of IT and analytics." data-ar="مزيج عملي من تقنية المعلومات وتحليل البيانات.">A practical mix of IT and analytics.</h2><p data-en="My background combines systems administration, database support and reporting. I enjoy organizing data, identifying patterns and presenting findings in a way that supports better decisions." data-ar="تجمع خلفيتي بين إدارة الأنظمة ودعم قواعد البيانات وإعداد التقارير. أهتم بتنظيم البيانات واكتشاف الأنماط وعرض النتائج بطريقة تساعد على اتخاذ قرارات أفضل.">My background combines systems administration, database support and reporting. I enjoy organizing data, identifying patterns and presenting findings in a way that supports better decisions.</p></div>
+  <div class="about-grid"><div class="about-copy"><p data-en="I hold a Bachelor's degree in Information Technology and have worked in system administration roles, supporting users, maintaining networks and databases, and preparing operational reports. I am building a focused portfolio in data analytics with Excel, Power BI and SQL." data-ar="أحمل درجة البكالوريوس في تقنية المعلومات، وعملت في مجال إدارة الأنظمة، ودعم المستخدمين، وصيانة الشبكات وقواعد البيانات، وإعداد التقارير التشغيلية. أعمل على تطوير ملف أعمال متخصص في تحليل البيانات باستخدام Excel وPower BI وSQL.">I hold a Bachelor's degree in Information Technology and have worked in system administration roles, supporting users, maintaining networks and databases, and preparing operational reports. I am building a focused portfolio in data analytics with Excel, Power BI and SQL.</p></div>
+  <div class="info-panel"><h3 data-en="Quick profile" data-ar="ملف تعريفي مختصر">Quick profile</h3><div class="info-list">
+    <div class="info-item"><span data-en="Specialty" data-ar="التخصص">Specialty</span><strong data-en="Data Analytics" data-ar="تحليل البيانات">Data Analytics</strong></div>
+    <div class="info-item"><span data-en="Education" data-ar="المؤهل">Education</span><strong data-en="BSc, Information Technology" data-ar="بكالوريوس تقنية المعلومات">BSc, Information Technology</strong></div>
+    <div class="info-item"><span data-en="Based in" data-ar="مقر الإقامة">Based in</span><strong data-en="Sudan" data-ar="السودان">Sudan</strong></div>
+    <div class="info-item"><span data-en="Languages" data-ar="اللغات">Languages</span><strong data-en="Arabic · English" data-ar="العربية · الإنجليزية">Arabic · English</strong></div>
+  </div></div></div>
+</div></section>
+<section class="skills" id="skills"><div class="container">
+  <div class="section-head"><div class="kicker" data-en="What I work with" data-ar="مهاراتي">What I work with</div><h2 data-en="Tools & capabilities" data-ar="الأدوات والقدرات">Tools & capabilities</h2><p data-en="A selection of tools and skills from my professional background." data-ar="مجموعة من الأدوات والمهارات ضمن خلفيتي المهنية.">A selection of tools and skills from my professional background.</p></div>
+  <div class="skill-grid">
+    <div class="skill"><div class="icon">X</div><h3>Microsoft Excel</h3><p data-en="Pivot Tables, lookup functions, formulas and reporting." data-ar="الجداول المحورية، ودوال البحث، والمعادلات وإعداد التقارير.">Pivot Tables, lookup functions, formulas and reporting.</p></div>
+    <div class="skill"><div class="icon">P</div><h3>Power BI</h3><p data-en="Interactive dashboards, data modeling and DAX." data-ar="لوحات معلومات تفاعلية، ونمذجة البيانات وDAX.">Interactive dashboards, data modeling and DAX.</p></div>
+    <div class="skill"><div class="icon">SQL</div><h3>SQL & Databases</h3><p data-en="Database concepts, querying and data extraction." data-ar="مفاهيم قواعد البيانات والاستعلام واستخراج البيانات.">Database concepts, querying and data extraction.</p></div>
+    <div class="skill"><div class="icon">IT</div><h3>IT Operations</h3><p data-en="Systems administration, user support and networking." data-ar="إدارة الأنظمة ودعم المستخدمين والشبكات.">Systems administration, user support and networking.</p></div>
+  </div>
+</div></section>
+<section id="projects"><div class="container">
+  <div class="section-head"><div class="kicker" data-en="Selected work" data-ar="نماذج الأعمال">Selected work</div><h2 data-en="Projects & case studies" data-ar="المشاريع ودراسات الحالة">Projects & case studies</h2><p data-en="These are project slots for your real work. We will replace each example with a completed project, screenshots, tools and findings. No client or business results are claimed here." data-ar="هذه مساحات مخصصة لمشاريعك الفعلية. سنستبدل كل نموذج بمشروع مكتمل وصور للأعمال والأدوات والنتائج. لا ندّعي هنا نتائج تخص عملاء أو مؤسسات.">These are project slots for your real work. We will replace each example with a completed project, screenshots, tools and findings. No client or business results are claimed here.</p></div>
+  <div class="project-grid">
+    <article class="project"><div class="project-visual">Excel</div><div class="project-body"><h3 data-en="Excel Data Analysis" data-ar="تحليل البيانات باستخدام Excel">Excel Data Analysis</h3><p data-en="A case study to clean, summarize and explore a dataset using formulas and Pivot Tables." data-ar="دراسة حالة لتنظيف مجموعة بيانات وتلخيصها واستكشافها باستخدام المعادلات والجداول المحورية.">A case study to clean, summarize and explore a dataset using formulas and Pivot Tables.</p><span class="tag">Excel</span><span class="tag">Data Cleaning</span></div></article>
+    <article class="project"><div class="project-visual">BI</div><div class="project-body"><h3 data-en="Power BI Dashboard" data-ar="لوحة معلومات Power BI">Power BI Dashboard</h3><p data-en="An interactive dashboard concept with KPIs, filters and clear visual storytelling." data-ar="تصور للوحة معلومات تفاعلية تتضمن مؤشرات أداء وفلاتر وعرضاً بصرياً واضحاً للنتائج.">An interactive dashboard concept with KPIs, filters and clear visual storytelling.</p><span class="tag">Power BI</span><span class="tag">DAX</span></div></article>
+    <article class="project"><div class="project-visual">SQL</div><div class="project-body"><h3 data-en="SQL Data Exploration" data-ar="استكشاف البيانات باستخدام SQL">SQL Data Exploration</h3><p data-en="A practical database project using queries, joins, aggregations and business questions." data-ar="مشروع عملي لقواعد البيانات باستخدام الاستعلامات والربط والتجميع وأسئلة الأعمال.">A practical database project using queries, joins, aggregations and business questions.</p><span class="tag">SQL</span><span class="tag">Databases</span></div></article>
+  </div>
+</div></section>
+<section id="experience" class="skills"><div class="container">
+  <div class="section-head"><div class="kicker" data-en="Professional journey" data-ar="المسيرة المهنية">Professional journey</div><h2 data-en="Experience & education" data-ar="الخبرة والتعليم">Experience & education</h2></div>
+  <div class="timeline">
+    <div class="job"><h3 data-en="System Administrator" data-ar="مسؤول إدارة الأنظمة">System Administrator</h3><div class="meta">Esrage for Development & Microfinance Co. · 2021–2026</div><p data-en="Systems monitoring, user and access management, technical support, reporting and support for data-informed product work." data-ar="مراقبة الأنظمة وإدارة المستخدمين والصلاحيات والدعم الفني وإعداد التقارير والمساهمة في أعمال تطوير المنتجات المعتمدة على تحليل بيانات العملاء.">Systems monitoring, user and access management, technical support, reporting and support for data-informed product work.</p></div>
+    <div class="job"><h3 data-en="System Administrator" data-ar="مسؤول إدارة الأنظمة">System Administrator</h3><div class="meta">Abu Tgilaa Trading, Services & Contracting · 2018–2020</div><p data-en="Local network and device support, database maintenance, user support and Excel-based data extraction." data-ar="دعم الشبكات والأجهزة المحلية وصيانة قواعد البيانات ودعم المستخدمين واستخراج البيانات باستخدام Excel.">Local network and device support, database maintenance, user support and Excel-based data extraction.</p></div>
+    <div class="job"><h3 data-en="BSc in Information Technology" data-ar="بكالوريوس تقنية المعلومات">BSc in Information Technology</h3><div class="meta">Future University (Computer Man) · 2013–2017</div><p data-en="Academic foundation in information technology." data-ar="تأسيس أكاديمي في مجال تقنية المعلومات.">Academic foundation in information technology.</p></div>
+  </div>
+</div></section>
+<section class="contact" id="contact"><div class="container">
+  <div class="section-head"><div class="kicker" style="color:#91bdff" data-en="Get in touch" data-ar="تواصل معي">Get in touch</div><h2 data-en="Let's discuss opportunities." data-ar="لنتحدث عن فرص العمل والتعاون.">Let's discuss opportunities.</h2><p data-en="I'm open to data analytics, reporting and IT opportunities." data-ar="أنا منفتح على فرص العمل في تحليل البيانات وإعداد التقارير وتقنية المعلومات.">I'm open to data analytics, reporting and IT opportunities.</p></div>
+  <div class="contact-card"><div><strong>fadi.it.department@gmail.com</strong><p data-en="Email is the best way to reach me." data-ar="البريد الإلكتروني هو أفضل وسيلة للتواصل معي.">Email is the best way to reach me.</p></div><div><a href="mailto:fadi.it.department@gmail.com">Send an email ↗</a><br><a href="https://linkedin.com/in/fadi-albele-743299295" target="_blank" rel="noopener">LinkedIn ↗</a></div></div>
+</div></section>
+</main>
+<footer><div class="container footer-row"><span>© <span id="year"></span> Fadi Mohamed Ibrahim Albeli</span><span data-en="Designed as a bilingual professional portfolio." data-ar="موقع تعريفي مهني باللغتين العربية والإنجليزية.">Designed as a bilingual professional portfolio.</span></div></footer>
+<script>
+const translations = document.querySelectorAll('[data-en][data-ar]');
+let currentLang = 'en';
+const langBtn = document.getElementById('langBtn');
+function setLanguage(lang){
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  translations.forEach(el => { el.textContent = el.dataset[lang]; });
+  langBtn.textContent = lang === 'en' ? 'العربية' : 'English';
+  document.title = lang === 'en' ? 'Fadi Albeli | Data Analyst Portfolio' : 'فادي البلّي | معرض الأعمال';
+}
+langBtn.addEventListener('click', () => setLanguage(currentLang === 'en' ? 'ar' : 'en'));
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
